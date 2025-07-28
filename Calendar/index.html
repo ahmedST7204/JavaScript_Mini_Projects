@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blue Page Calendar</title>
+</head>
+<body onload="randerDate()">
+
+    <div class="container">
+        <div class="calendar">
+            <div class="digital_clock">
+                <div class="time">
+                    <span class="hours">00 :</span>
+                    <span class="minutes">00 :</span>
+                    <span class="seconds">00</span>
+                    <span class="format">AM</span>
+                </div>
+            </div>
+
+            <div class="month">
+                <div class="prev" onclick="moveDate('prev')">
+                    <span class="arrow">&#10094</span>
+                </div>
+
+                <div>
+                    <h2 id="month">April-2023</h2>
+                    <p id="date">Tue April 20 2023</p>
+                </div>
+
+                <div class="next" onclick="moveDate('next')">
+                    <span class="arrow">&#10095</span>
+                </div>
+            </div>
+
+            <div class="week">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+
+            <div class="dates"></div>
+          
+        </div>
+    </div>
+
+    <!---------------------- JavaScript Connection ------------------------->
+    <script src="script.js"></script>
+</body>
+</html>
