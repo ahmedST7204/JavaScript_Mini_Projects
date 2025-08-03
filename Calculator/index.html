@@ -7,45 +7,39 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <form name="calcForm">
-                <div class="display">
-                    <input type="text" name="display">
-                </div>
-                <div>
-                    <input type="button" value="AC" onclick="clearDisplay()" class="operator"> 
-                    <input type="button" value="DE" onclick="deleteLast()" class="operator">
-                    <input type="button" value="." onclick="appendValue('.')" class="operator">
-                    <input type="button" value="/" onclick="appendValue('/')" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="7" onclick="appendValue('7')">
-                    <input type="button" value="8" onclick="appendValue('8')">
-                    <input type="button" value="9" onclick="appendValue('9')">
-                    <input type="button" value="*" onclick="appendValue('*')" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="4" onclick="appendValue('4')">
-                    <input type="button" value="5" onclick="appendValue('5')">
-                    <input type="button" value="6" onclick="appendValue('6')">
-                    <input type="button" value="-" onclick="appendValue('-')" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="1" onclick="appendValue('1')">
-                    <input type="button" value="2" onclick="appendValue('2')">
-                    <input type="button" value="3" onclick="appendValue('3')">
-                    <input type="button" value="+" onclick="appendValue('+')" class="operator">
-                </div>
-                <div>
-                    <input type="button" value="00" onclick="appendValue('00')">
-                    <input type="button" value="0" onclick="appendValue('0')">
-                    <input type="button" value="=" onclick="calculate()" class="equal operator">
-                </div>
-            </form>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="inputBox" readonly>
+        <div>
+            <button class="operator ac">AC</button>
+            <button class="operator del">DEL</button>
+            <button class="operator">%</button>
+            <button class="operator">/</button>
+        </div>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">*</button>
+        </div>
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">-</button>
+        </div>
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+        </div>
+         <div>
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button class="equalBtn">=</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
