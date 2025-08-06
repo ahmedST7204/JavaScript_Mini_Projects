@@ -4,7 +4,7 @@ function age() {
     var m1 = document.getElementById('month').value;
     var y1 = document.getElementById('year').value;
 
-    // -------------------- Taking current Year -------------------------
+    // -------------------- Taking Current Year -------------------------
     var date = new Date();
     var d2 = date.getDate();
     var m2 = 1 + date.getMonth();
@@ -39,7 +39,7 @@ function age() {
 
     document.getElementById('age').innerHTML = result;
 }
-
+// ----------------------- Enter Button Action ----------------------
 document.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         document.getElementById("myButton").click();
