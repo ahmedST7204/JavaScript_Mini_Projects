@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Age Counter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="base">
+            <h4>Age Calculator</h4>
+        </div>
+
+        <!---------------- Date Input Box ------------------->
+        <div class="block">
+            <p class="title">Date</p>
+            <input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1" maxlength="2" id="myInput">
+        </div>
+
+        <!---------------- Month Input Box ------------------->
+          <div class="block">
+            <p class="title">Month</p>
+            <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2" id="myInput">
+        </div>
+
+        <!---------------- Year Input Box ------------------->
+          <div class="block">
+            <p class="title">Year</p>
+            <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4" id="myInput">
+        </div>
+
+        <!---------------- Submit Button ------------------->
+         <div class="submit-button">
+            <input type="button" name="submit" value="Submit" onclick="age()" id="myButton"/>
+        </div>
+        <div id="age"></div>
+    </div>
+    
+    <!-- ------------------- JavaScript Connection ----------------------- -->
+    <script src="script.js"></script>
+</body>
+</html>
