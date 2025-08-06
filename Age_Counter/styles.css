@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0; 
+}
+
+.container{
+    width: 520px;
+    height: auto;
+    min-height: 100px;
+    margin: 100px auto;
+    background-color: #252424;
+    border-radius: 5px;
+    border: 1px solid rgb(46, 228, 152);
+    box-shadow: inset 0 0 0.5em 0 #0ef, 0 0 0.5em 0 #0ef;
+}
+
+.base h4{
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0px;
+    box-shadow: 0px 2px #bababa;
+    font-size: 34px;
+    color: rgb(5, 202, 169);
+}
+
+.block{
+    width: 135px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.title{
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 0.5px;
+    letter-spacing: 0.5px;
+    word-spacing: 2.7px;
+    color: rgb(0, 183, 255);
+}
+
+input[type=text]{
+    width: 140px;
+    margin: auto;
+    outline: none;
+    min-height: 50px;
+    border: 2px solid #333;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #111;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 22px;
+}
+
+input[type=button]{
+    width: 120px;
+    margin-left: 40%;
+    margin-top: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: rgb(0, 183, 255);
+    color: #111;
+    font-weight: bold;
+    border: 1px solid rgb(0, 255, 128);
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    box-shadow: inset 0 0 0.5em 0 #0ef, 0 0 0.5em 0 #0ef;
+}
+
+input[type=button]:hover{
+    color: #fff;
+    transition-property: box-shadow;
+    transition-duration: .5s;
+    box-shadow: inset 0 0 0.5em 0 #0ef, 0 0 0.5em 0 #0ef;
+}
+
+#age{
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.5;
+    word-spacing: 2.7px;
+    color: #fff;
+}
+
